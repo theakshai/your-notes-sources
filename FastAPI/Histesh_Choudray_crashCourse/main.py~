@@ -1,5 +1,5 @@
 ''' Just a simple api to create,get,post,delete courses.I used uvicorn to excecute'''
-"""Hello"""
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Optional
