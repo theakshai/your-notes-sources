@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Django Post</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+rel="stylesheet">
+	<link rel="stylesheet" href="{% static '/css/base.css' %}">
+</head>
+<body>
+	<header>
+		<h1><a href="{% url 'home' %}">Django Blog</a></h1>
+	</header>
+	<div>
+		{% block content%}
+		{% endblock content%}
+	</div>
+</body>
+</html>
