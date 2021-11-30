@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the world of Django......</h1>
+<p>Congratulations! On accomplishing your first task!</p>
+<h4><a href="{% url 'employeeDetails'%}">+Add Employee</a></h4>
+<h4><a href="{% url 'displayDetails'%}">+Display all</a></h4>
+
+{% endblock content %}

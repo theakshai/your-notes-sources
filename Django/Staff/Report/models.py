@@ -1,14 +1,14 @@
 from django.db import models
+# ['staff_id', 'staff_name', 'designation', 'salary']
+class Employee_details(models.Model):
 
-# Create your models here.
-'''
-1. Staff Id
-2. Staff Name
-3. Staff Designation
-4. Staff Salary
-'''
-class Employee_Details(models.Model):
-	staff_id = models.IntegerField()
-	staff_name = models.TextField()
-	staff_designation = models.CharField(max_length=50)
-	staff_salary = models.IntegerField()
+	staff_id = models.CharField(max_length=100)
+
+	staff_name = models.CharField(max_length=100)
+
+	designation = models.CharField(max_length=100)
+
+	salary = models.CharField(max_length=100)
+
+	def __str__(self):
+		return self.staff_name

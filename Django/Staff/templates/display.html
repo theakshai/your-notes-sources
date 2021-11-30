@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for e in employee_list %}
+	<li>Employee Id: {{ e.staff_id }}</li>
+	<li>Employee Name: {{ e.staff_name }}</li>
+	<li>Employee Designation: {{ e.designation }}</li>
+	<li>Employee Salary: {{ e.salary }}</li>
+	</ul>
+	<br>
+{% endfor %}
+<h4><a href="{% url 'home' %}">Back to home</a></h4>
+{% endblock content %}
